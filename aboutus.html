@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>ABOUT US</title>
+		<!-- ESTILOS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="css/resCarousel.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/movil.css">
+	<link rel="stylesheet" href="css/carrousel.css">
+	<!-- ICONOS Y TIPOGRAFIA -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('#cabecera').outerHeight(true);
+    var altura_del_menu = $('#menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('#menu').addClass('fixed');
+        $('section').css('padding-top', (altura_del_menu) + 'px');
+    } else {
+        $('#menu').removeClass('fixed');
+        $('section').css('padding-top', '0');
+    }
+}
+
+</script>
+</head>
+<body>
+		<!---CABECERA-->
+	<header id="cabecera">
+				<figure id="logo">
+					<img src="img/logo.png" alt="">
+				</figure>
+				<aside>
+					<section id="num">
+						<div id="icono" class="tossing">
+							<i class="fas fa-phone-square"></i>
+						</div>
+							<h2>123-456-7890</h2>
+					</section>
+						<p><em>9863 - 9867 Mill Road, Cambridge, MG09 99HT.</em></p>
+				</aside>
+		</header>
+		<!---MENU-->
+			<nav id="menu">
+				<a id="icono-bar" href="#">
+					<i class="fas fa-bars"></i>
+				</a>
+				<ul class="lista">
+				<li><a href="index.php" class="ancla"><i class="fas fa-home"></i> HOME</a></li>
+				<li><a href="aboutus.html" class="ancla">ABOUT US <i class="fas fa-caret-down"></i></a>
+					<ul>
+						<li><a href="gallery.html" class="ancla">Gallery</a></li>
+						<li><a href="" class="ancla">Submenu2 <i class="fas fa-caret-right"></i></a>
+							<ul id="sub">
+								<li><a href="" class="ancla">Submenu1</a></li>
+								<li><a href="" class="ancla">Submenu2</a></li>
+								<li><a href="" class="ancla">Submenu3</a></li>
+								<li><a href="" class="ancla">Submenu4</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="ancla">Submenu3</a></li>
+						<li><a href="" class="ancla">Submenu4</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="ancla">SERVICES</a></li>
+			</ul>
+		</nav>
+		<header id="menu-mobilee">
+	<nav id="navigation">
+
+            <div class="control-menu">
+                <a href="#navigation" class="open"><span>MENU</span></a>
+                <a href="#" class="close"><span>CERRAR</span></a>
+
+            </div>
+
+		
+		<ul class="nav-items">
+       
+			<li id="Web-Dev"><a href="index.php"> <span>Home</span></a></li>
+            <li id="Mobile"><a href="aboutus.html"><span>AboutUs</span></a>
+				<ul>
+					<li id="Net-VS"><a href="gallery.html"><span>Gallery</span></a></li>
+				</ul>
+            </li>
+            <li id="Data"><a href="services.html"><span>Services</span></a></li>
+		</ul>
+
+	</nav>
+</header>
+<div id="flecharriba">
+			<i class="fas fa-angle-up"></i>
+		</div>
+	<section id="nosotros-banner">
+		<section id="titulo-nos">
+		<h1>NOSOTROS</h1>
+		</section>
+	</section>
+	<section id="parrafo-nos">
+		<h3>A Few Words About Us</h3>
+		<p><span>Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.
+		Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna.</span></p>
+		<p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orc i ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.</p>
+	</section>
+	<section id="articulos-nos">
+		<article>
+			<figure>
+			<img src="img/nos1.png" alt="">
+			<h3>What We Do</h3>
+			<p>Donec sit amet eros. Lorem ipsum dolor sit amet, con sectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>
+			</figure>
+		</article>
+		<article>
+			<figure>
+			<img src="img/nos2.png" alt="">
+			<h3>Our Capabilities</h3>
+			<p>Donec sit amet eros. Lorem ipsum dolor sit amet, con sectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>
+			</figure>
+		</article>
+		<article>
+			<figure>
+			<img src="img/nos3.png" alt="">
+			<h3>Our Guarantee</h3>
+			<p>Donec sit amet eros. Lorem ipsum dolor sit amet, con sectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</p>
+			</figure>
+		</article>
+	</section>
+	<h3 id="subtitle-mv">Mission, Vision and Values</h3>
+	<section id="mision-vision">
+		<section id="division-izq">
+		<section class="mision-izquierda">
+			<div class="iconos-mision">
+				<i class="far fa-thumbs-up"></i>
+			</div>
+			<section class="parrafo-mision">
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget.</p>
+				<p>Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipi scing elit. Mauris fermentum dictum magna.</p>
+			</section>
+		</section>
+		<section class="mision-izquierda">
+			<div class="iconos-mision">
+				<i class="far fa-comments"></i>
+			</div>
+			<section class="parrafo-mision">
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget.</p>
+				<p>Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipi scing elit. Mauris fermentum dictum magna.</p>
+			</section>
+		</section>
+		</section>
+		<section id="division-der">
+			<section class="mision-derecha">
+			<div class="iconos-mision">
+				<i class="far fa-clock"></i>
+			</div>
+			<section class="parrafo-mision">
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget.</p>
+				<p>Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipi scing elit. Mauris fermentum dictum magna.</p>
+			</section>
+		</section>
+		<section class="mision-derecha">
+			<div class="iconos-mision">
+				<i class="fas fa-star"></i>
+			</div>
+			<section class="parrafo-mision">
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget.</p>
+				<p>Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipi scing elit. Mauris fermentum dictum magna.</p>
+			</section>
+		</section>
+		</section>
+	</section>
+	<section id="work-team">
+		<h2>Work Team</h2>
+		<div id="contenedor" class="resCarousel" data-items="1-2-3" 
+	  data-slide="3" data-speed="900" data-animator="lazy">
+            <div class="resCarousel-inner">
+
+                <div class="item">
+                    <div id="persona1">
+                        <div>
+                            
+                        </div>
+                        <h3>Daniela Dorantes</h3>
+                        <p>Gerente de Proyecto 
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    	</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona2">
+                        <div>
+                            
+                        </div>
+                        <h3>Omar Muñoz</h3>
+                        <p>Director de finanzas
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona3">
+                        <div>
+                            
+                        </div>
+                        <h3>Liliana Villalobos</h3>
+                        <p>Gerente de Proyecto
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona4">
+                        <div>
+                            
+                        </div>
+                        <h3>Mario Santos</h3>
+                        <p>Gerente de Proyecto
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona5">
+                        <div>
+                           
+                        </div>
+                        <h3>Jesica Garcés</h3>
+                        <p>Gerente de Proyecto
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona6">
+                        <div>
+                           
+                        </div>
+                        <h3>Arturo Moreno</h3>
+                        <p>Director interiorismo comercial
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona7">
+                        <div>
+                            
+                        </div>
+                        <h3>Cinthia Mendoza</h3>
+                        <p>Líder de Proyecto
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div id="persona8">
+                        <div>
+                            
+                        </div>
+                        <h3>Enrique Rivera</h3>
+                        <p>Gerente de operaciones
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-envelope"></i>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <button class=' leftRs'><i class="fas fa-angle-left"></i></button>
+            <button class='rightRs'><i class="fas fa-angle-right"></i></i></button>
+        </div>
+    </div>
+    <script>
+        var pageRefresh = true;
+
+        function ResCarouselCustom() {
+            var items = $("#dItems").val(),
+                slide = $("#dSlide").val(),
+                speed = $("#dSpeed").val(),
+                interval = $("#dInterval").val()
+
+            var itemsD = "data-items=\"" + items + "\"",
+                slideD = "data-slide=\"" + slide + "\"",
+                speedD = "data-speed=\"" + speed + "\"",
+                intervalD = "data-interval=\"" + interval + "\"";
+
+
+            var atts = "";
+            atts += items != "" ? itemsD + " " : "";
+            atts += slide != "" ? slideD + " " : "";
+            atts += speed != "" ? speedD + " " : "";
+            atts += interval != "" ? intervalD + " " : ""
+
+            //console.log(atts);
+
+            var dat = "";
+            dat += '<h4 >' + atts + '</h4>'
+            dat += '<div class=\"resCarousel\" ' + atts + '>'
+            dat += '<div class="resCarousel-inner">'
+            for (var i = 1; i <= 14; i++) {
+                dat += '<div class=\"item\"><div><h1>' + i + '</h1></div></div>'
+            }
+            dat += '</div>'
+            dat += '<button class=\'btn btn-default leftRs\'><i class=\"fa fa-fw fa-angle-left\"></i></button>'
+            dat += '<button class=\'btn btn-default rightRs\'><i class=\"fa fa-fw fa-angle-right\"></i></button>    </div>'
+            console.log(dat);
+            $("#customRes").html(null).append(dat);
+
+            if (!pageRefresh) {
+                ResCarouselSize();
+            } else {
+                pageRefresh = false;
+            }
+            //ResCarouselSlide();
+        }
+
+        $("#eventLoad").on('ResCarouselLoad', function() {
+            //console.log("triggered");
+            var dat = "";
+            var lenghtI = $(this).find(".item").length;
+            if (lenghtI <= 30) {
+                for (var i = lenghtI; i <= lenghtI + 10; i++) {
+                    dat += '<div class="item"><div class="tile"><div><h1>' + (i + 1) + '</h1></div><h3>Title</h3><p>content</p></div></div>'
+                }
+                $(this).append(dat);
+            }
+        });
+    </script>
+    <script src="resCarousel.js"></script>
+	</section>
+	<section id="video-resp">
+		<section id="tx-vid-bot">
+		<div id="texto-video">
+			<h3>Remodeling appropriate for your home. Quality home improvement.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis officiis natus, quibusdam rerum commodi molestias, voluptatem impedit pariatur ad dicta eveniet architecto laborum beatae, repellendus laboriosam reprehenderit harum odio id!</p>
+		</div>
+		<div id="boton-rd">
+			<a href="#">Read more</a>
+		</div>
+		</section>
+		<div id="cuadro-video"> 
+			<div id="video-enlace">
+			<iframe src="https://www.youtube.com/embed/IME3JQ1BiIE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<h3>Home Design Decoration</h3>
+		</div>
+	</section>
+	<section id="profesional-remodeler">
+		<article>
+			<div class="fechas">
+				<h2>STEP</h2>
+				<h2>1</h2>
+			</div>
+			<section class="parrafo-fechas">
+				<h4>Dapibus eget, elementum</h4>
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel. Cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.</p>
+			</section>
+		</article>
+		<article>
+			<div class="fechas">
+				<h2>STEP</h2>
+				<h2>2</h2>
+			</div>
+			<section class="parrafo-fechas">
+				<h4>Dapibus eget, elementum</h4>
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel. Cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.</p>
+			</section>
+		</article>
+		<article>
+			<div class="fechas">
+				<h2>STEP</h2>
+				<h2>3</h2>
+			</div>
+			<section class="parrafo-fechas">
+				<h4>Dapibus eget, elementum</h4>
+				<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel. Cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.</p>
+			</section>
+		</article>
+	</section>
+	<footer>
+		<section id="text-footer">
+		<h4>WOOD HAMMER © 2018 All Rights Reserved | Privacy Policy</h4>
+		</section>
+		<section id="iconos-footer">
+		<div class="redes-sociales">
+			<i class="fab fa-facebook-f"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-instagram"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-pinterest-p"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-linkedin-in"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-twitter"></i>
+		</div>
+		</section>
+	</footer>
+			<script>
+
+			// SCRIPT PARA EL BOTON SUBIR
+			$(document).ready(function(){
+    $('#flecharriba').click(function(){
+        $('body, html').animate({
+            scrollTop: '0px'
+        }, 300);
+    });
+    });
+
+    $(window).scroll(function(){
+        if( $(this).scrollTop() > 0 ){
+            $('#flecharriba').slideDown(300);
+        } else {
+            $('#flecharriba').slideUp(300);
+        }
+    });
+
+
+		</script>
+</body>
+</html>

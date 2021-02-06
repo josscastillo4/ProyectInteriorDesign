@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>GALLERY</title>
+        <!-- ESTILOS -->
+    <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css" media="screen">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
+    <!-- ICONOS Y TIPOGRAFIA -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+<body>
+    <!---CABECERA-->
+    <header id="cabecera">
+                <figure id="logo">
+                    <img src="img/logo.png" alt="">
+                </figure>
+                <aside>
+                    <section id="num">
+                        <div id="icono" class="tossing">
+                            <i class="fas fa-phone-square"></i>
+                        </div>
+                            <h2>123-456-7890</h2>
+                    </section>
+                        <p><em>9863 - 9867 Mill Road, Cambridge, MG09 99HT.</em></p>
+                </aside>
+        </header>
+        <!---MENU-->
+            <nav id="menu">
+                <a id="icono-bar" href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <ul class="lista">
+                <li><a href="index.php" class="ancla"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href="aboutus.html" class="ancla">ABOUT US <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="gallery.html" class="ancla">Gallery</a></li>
+                        <li><a href="" class="ancla">Submenu2 <i class="fas fa-caret-right"></i></a>
+                            <ul id="sub">
+                                <li><a href="" class="ancla">Submenu1</a></li>
+                                <li><a href="" class="ancla">Submenu2</a></li>
+                                <li><a href="" class="ancla">Submenu3</a></li>
+                                <li><a href="" class="ancla">Submenu4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="ancla">Submenu3</a></li>
+                        <li><a href="" class="ancla">Submenu4</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html" class="ancla">SERVICES</a></li>
+            </ul>
+        </nav>
+        <header id="menu-mobilee">
+    <nav id="navigation">
+
+            <div class="control-menu">
+                <a href="#navigation" class="open"><span>MENU</span></a>
+                <a href="#" class="close"><span>CERRAR</span></a>
+
+            </div>
+
+        
+        <ul class="nav-items">
+       
+            <li id="Web-Dev"><a href="index.php"> <span>Home</span></a></li>
+            <li id="Mobile"><a href="aboutus.html"><span>AboutUs</span></a>
+                <ul>
+                    <li id="Net-VS"><a href="gallery.html"><span>Gallery</span></a></li>
+                </ul>
+            </li>
+            <li id="Data"><a href="services.html"><span>Services</span></a></li>
+        </ul>
+
+    </nav>
+</header>
+<div id="flecharriba">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('#cabecera').outerHeight(true);
+    var altura_del_menu = $('#menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('#menu').addClass('fixed');
+        $('section').css('padding-top', (altura_del_menu) + 'px');
+    } else {
+        $('#menu').removeClass('fixed');
+        $('section').css('padding-top', '0');
+    }
+}
+
+</script>
+    <script type=text/javascript>
+        $(document).ready(function(){
+            $(".fancybox").fancybox({
+                openEffect:'none',
+                closeEffect:'none'
+            });
+        });
+    </script>
+    <h2 id="tit-our">Our Gallery</h2>
+        <section id="galeria">
+        <figure class="figi" class="ejemplo-5">
+            <a class="fancybox" rel="gallery1" href="img/gallery1.jpg" title="FOTO 1">
+                <img src="img/gallery1.jpg" alt="">
+                    <div class="zoom-gallery">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <figcaption class="pos-gall">
+            <p>Living room remodeling</p>
+            <p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+        </figcaption>
+            </a>
+        </figure>
+        <figure class="figi" class="ejemplo-5">
+            <a class="fancybox" rel="gallery2" href="img/foto2.jpg" title="FOTO 2">
+                <img src="img/gallery2.jpg" alt="">
+                    <div class="zoom-gallery">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <figcaption class="pos-gall">
+            <p>Living room remodeling</p>
+            <p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+        </figcaption>
+            </a>
+        </figure>
+        <figure class="figi" class="ejemplo-5">
+            <a class="fancybox" rel="gallery3" href="img/gallery3.jpg" title="FOTO 3">
+                <img src="img/gallery3.jpg" alt="">
+                    <div class="zoom-gallery">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <figcaption class="pos-gall">
+            <p>Living room remodeling</p>
+            <p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+        </figcaption>
+            </a>
+        </figure>
+        <figure class="figi" class="ejemplo-5">
+            <a class="fancybox" rel="gallery3" href="img/gallery4.jpg" title="FOTO 4">
+                <img src="img/gallery4.jpg" alt="">
+                    <div class="zoom-gallery">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <figcaption class="pos-gall">
+            <p>Living room remodeling</p>
+            <p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+        </figcaption>
+            </a>
+        </figure>
+        <figure class="figi" class="ejemplo-5">
+            <a class="fancybox" rel="gallery3" href="img/gallery5.jpg" title="FOTO 5">
+                <img src="img/gallery5.jpg" alt="">
+                    <div class="zoom-gallery">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <figcaption class="pos-gall">
+            <p>Living room remodeling</p>
+            <p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+        </figcaption>
+            </a>
+        </figure>
+        <figure class="figi" class="ejemplo-5">
+            <a class="fancybox" rel="gallery3" href="img/gallery6.jpg" title="FOTO 6">
+                <img src="img/gallery6.jpg" alt="">
+                <div class="zoom-gallery">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <figcaption class="pos-gall">
+            <p>Living room remodeling</p>
+            <p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+        </figcaption>
+            </a>
+        </figure>
+    </section>
+            <footer>
+        <section id="text-footer">
+        <h4>WOOD HAMMER © 2018 All Rights Reserved | Privacy Policy</h4>
+        </section>
+        <section id="iconos-footer">
+        <div class="redes-sociales">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="redes-sociales">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="redes-sociales">
+            <i class="fab fa-pinterest-p"></i>
+        </div>
+        <div class="redes-sociales">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="redes-sociales">
+            <i class="fab fa-twitter"></i>
+        </div>
+        </section>
+    </footer>
+            <script>
+
+            // SCRIPT PARA EL BOTON SUBIR
+            $(document).ready(function(){
+    $('#flecharriba').click(function(){
+        $('body, html').animate({
+            scrollTop: '0px'
+        }, 300);
+    });
+    });
+
+    $(window).scroll(function(){
+        if( $(this).scrollTop() > 0 ){
+            $('#flecharriba').slideDown(300);
+        } else {
+            $('#flecharriba').slideUp(300);
+        }
+    });
+
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>SERVICES</title>
+		<!-- ESTILOS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/movil.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="code.jquery.com/jquery-1.12.4.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<!-- ICONOS Y TIPOGRAFIA -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('#cabecera').outerHeight(true);
+    var altura_del_menu = $('#menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('#menu').addClass('fixed');
+        $('section').css('padding-top', (altura_del_menu) + 'px');
+    } else {
+        $('#menu').removeClass('fixed');
+        $('section').css('padding-top', '0');
+    }
+}
+
+</script>
+	<script>
+ $( document ).ready(function() {
+
+          // ACORDION
+
+        $(function() {
+        $( "#accordion" ).accordion();
+  });
+          $('.acor').click(function() {
+         $( "#accordion" ).accordion({
+          collapsible: true
+         });
+        });
+
+
+  });
+
+  </script>
+</head>
+<body>
+	<!---CABECERA-->
+	<header id="cabecera">
+				<figure id="logo">
+					<img src="img/logo.png" alt="">
+				</figure>
+				<aside>
+					<section id="num">
+						<div id="icono" class="tossing">
+							<i class="fas fa-phone-square"></i>
+						</div>
+							<h2>123-456-7890</h2>
+					</section>
+						<p><em>9863 - 9867 Mill Road, Cambridge, MG09 99HT.</em></p>
+				</aside>
+		</header>
+		<!---MENU-->
+			<nav id="menu">
+				<a id="icono-bar" href="#">
+					<i class="fas fa-bars"></i>
+				</a>
+				<ul class="lista">
+				<li><a href="index.php" class="ancla"><i class="fas fa-home"></i> HOME</a></li>
+				<li><a href="aboutus.html" class="ancla">ABOUT US <i class="fas fa-caret-down"></i></a>
+					<ul>
+						<li><a href="gallery.html" class="ancla">Gallery</a></li>
+						<li><a href="" class="ancla">Submenu2 <i class="fas fa-caret-right"></i></a>
+							<ul id="sub">
+								<li><a href="" class="ancla">Submenu1</a></li>
+								<li><a href="" class="ancla">Submenu2</a></li>
+								<li><a href="" class="ancla">Submenu3</a></li>
+								<li><a href="" class="ancla">Submenu4</a></li>
+							</ul>
+						</li>
+						<li><a href="" class="ancla">Submenu3</a></li>
+						<li><a href="" class="ancla">Submenu4</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html" class="ancla">SERVICES</a></li>
+			</ul>
+		</nav>
+		<header id="menu-mobilee">
+	<nav id="navigation">
+
+            <div class="control-menu">
+                <a href="#navigation" class="open"><span>MENU</span></a>
+                <a href="#" class="close"><span>CERRAR</span></a>
+
+            </div>
+
+		
+		<ul class="nav-items">
+       
+			<li id="Web-Dev"><a href="index.php"> <span>Home</span></a></li>
+            <li id="Mobile"><a href="aboutus.html"><span>AboutUs</span></a>
+				<ul>
+					<li id="Net-VS"><a href="gallery.html"><span>Gallery</span></a></li>
+				</ul>
+            </li>
+            <li id="Data"><a href="services.html"><span>Services</span></a></li>
+		</ul>
+
+	</nav>
+</header>
+<div id="flecharriba">
+			<i class="fas fa-angle-up"></i>
+		</div>
+	<h3 id="rs-subtitle">Residential Services</h3>
+	<section id="imagenes-services">	
+		<figure class="fg-s ejemplo-4" >
+			<img src="img/servi1.jpg" alt="">
+		<div class="pos-zoom">	
+			<a href="gallery.html"><i class="fas fa-search-plus"></i></a>	
+		</div>
+		<figcaption class="text-fgcaption">
+			<p>Living room remodeling</p>
+			<p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+		</figcaption>
+		</figure>
+		<figure class="fg-s ejemplo-4">
+			<img src="img/servi2.jpg" alt="">
+			<div class="pos-zoom">	
+			<a href="gallery.html"><i class="fas fa-search-plus"></i></a>	
+		</div>
+		<figcaption class="text-fgcaption">
+			<p>Kitchen remodeling</p>
+			<p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+		</figcaption>	
+		</figure>	
+		<figure class="fg-s ejemplo-4">
+			<img src="img/servi3.jpg" alt="">
+			<div class="pos-zoom">	
+			<a href="gallery.html"><i class="fas fa-search-plus"></i></a>	
+		</div>
+		<figcaption class="text-fgcaption">
+			<p>Bathroom remodeling</p>
+			<p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+		</figcaption>	
+		</figure>
+		<figure class="fg-s ejemplo-4">
+			<img src="img/servi4.jpg" alt="">
+			<div class="pos-zoom">	
+			<a href="gallery.html"><i class="fas fa-search-plus"></i></a>	
+		</div>
+		<figcaption class="text-fgcaption">
+			<p>Bedroom remodeling</p>
+			<p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+		</figcaption>	
+		</figure>
+	</section>
+	<section id="your-house">
+		<section id="house-izq">
+		<h2>Turn Your House Into Your Dream Home</h2>
+		<h4>Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.</h4>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+		<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.</p>
+		<a href="#">Read More</a>
+		</section>
+		<section id="house-der">
+			<h2>Project ideas</h2>
+			<li><span>Donec accumsan malesuada orci</span></li>
+			<li><span>Donec sit amet eros lorem ipsum dolor</span></li>
+			<li><span>Sit amet consectetuer adipiscing elit</span></li>
+			<li><span>Mauris fermentum dictum magna</span></li>
+			<li><span>Sed laoreet aliquam leo tellus dolor</span></li>
+			<li><span>Dapibus eget elementum ve cursus</span></li>
+			<li><span>Aenean auctor wisi et urna aliquam erat</span></li>
+		</section>
+	</section>
+	<h2 id="our-ds">Our Design Process</h2>
+	<section id="accordion">
+                <h3 class="acor">Phase 1: Initial Consultation</h3>
+                  <div>
+                      <p>
+                      Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                      ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                      amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                      odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                      </p>
+                        <br>
+			<li class="lt-acor"><span class="acor-pf">Donec sit amet eros lr</span></li>
+			<li class="lt-acor"><span>Sit amet consectetuer adipi</span></li>
+			<li class="lt-acor"><span>Mauris fermentum dictum </span></li>
+			<li class="lt-acor"><span>Sed laoreet aliquam leo </span></li>
+                  </div>
+              <h3 class="acor">Phase 2: Project Proposal</h3>
+              <div>
+                    <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                    </p>
+                      <br>
+			<li class="lt-acor"><span class="acor-pf">Donec sit amet eros lr</span></li>
+			<li class="lt-acor"><span>Sit amet consectetuer adipi</span></li>
+			<li class="lt-acor"><span>Mauris fermentum dictum </span></li>
+			<li class="lt-acor"><span>Sed laoreet aliquam leo </span></li>
+              </div>
+
+
+              <h3 class="acor">Phase 3: Design</h3>
+              <div>
+                <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+                    <br>
+			<li class="lt-acor"><span class="acor-pf">Donec sit amet eros lr</span></li>
+			<li class="lt-acor"><span>Sit amet consectetuer adipi</span></li>
+			<li class="lt-acor"><span>Mauris fermentum dictum </span></li>
+			<li class="lt-acor"><span>Sed laoreet aliquam leo </span></li>
+              </div>
+              <h3 class="acor">Phase 3: Construction</h3>
+              <div>
+                <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+                <br>
+			<li class="lt-acor"><span class="acor-pf">Donec sit amet eros lr</span></li>
+			<li class="lt-acor"><span>Sit amet consectetuer adipi</span></li>
+			<li class="lt-acor"><span>Mauris fermentum dictum </span></li>
+			<li class="lt-acor"><span>Sed laoreet aliquam leo </span></li>
+              </div>
+	</section>
+	<h2 id="ts-font">Testimonials</h2>
+	<section id="testimonials">
+		<article>
+			<img src="img/testimonio1.jpg" alt="">
+			<p>“Adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit <a href="#">[...]</a></p>
+			<hr>
+			<p>Patrick Pool / <span>mail@demolink.org</span></p>
+		</article>
+		<article>
+			<img src="img/testimonio2.jpg" alt="">
+			<p>“Adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit <a href="#">[...]</a></p>
+			<hr>
+			<p>Edward Arnol / <span>mail@demolink.org</span></p>
+		</article>
+		<article>
+			<img src="img/testimonio3.jpg" alt="">
+			<p>“Adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit <a href="#">[...]</a></p>
+			<hr>
+			<p>Maritza Andrade / <span>mail@demolink.org</span></p>
+		</article>
+	</section>
+		<footer>
+		<section id="text-footer">
+		<h4>WOOD HAMMER © 2018 All Rights Reserved | Privacy Policy</h4>
+		</section>
+		<section id="iconos-footer">
+		<div class="redes-sociales">
+			<i class="fab fa-facebook-f"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-instagram"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-pinterest-p"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-linkedin-in"></i>
+		</div>
+		<div class="redes-sociales">
+			<i class="fab fa-twitter"></i>
+		</div>
+		</section>
+	</footer>
+			<script>
+
+			// SCRIPT PARA EL BOTON SUBIR
+			$(document).ready(function(){
+    $('#flecharriba').click(function(){
+        $('body, html').animate({
+            scrollTop: '0px'
+        }, 300);
+    });
+    });
+
+    $(window).scroll(function(){
+        if( $(this).scrollTop() > 0 ){
+            $('#flecharriba').slideDown(300);
+        } else {
+            $('#flecharriba').slideUp(300);
+        }
+    });
+
+
+		</script>
+</body>
+</html>

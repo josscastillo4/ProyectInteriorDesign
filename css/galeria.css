@@ -1,0 +1,91 @@
+
+#galeria{
+	max-width: 1200px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin:auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom:50px;
+}
+#tit-our{
+	font-family: poiret one;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 70px;
+	margin-top: 40px;
+}
+#galeria .figi{
+	width: 298px;
+	height: 260px;
+	overflow: hidden;
+	background-color: black;
+	position: relative;
+}
+#galeria a{
+	transition: all 2s;
+	margin-right: 20px;
+}
+#galeria a:hover{
+	opacity:.5;
+	filter: grayscale(1);
+}
+
+/*FECTO ANIMACION*/
+
+.pos-gall{
+	position: absolute;
+	left: 0;
+	top: 76.5%;
+	background-color: #f9b856;
+	color: white;
+	font-family: dosis;
+	font-size: 16px;
+	text-align: left;
+	padding: 1px 5px;
+}
+
+/*EFECTO ANIMACION IMG SERVICES*/
+..ejemplo-5 img {
+transition: all 0.4s ease-in-out 0.2s;
+opacity: 1;
+}
+.ejemplo-5 .zoom-gallery {
+background-color: rgba(249,184,86,.5);
+opacity: 0;
+transform: scale(0) rotate(-180deg);/*Rotamos 180grados y le damos tamaño 0*/
+transition: all 0.4s ease-in;
+border-radius: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 60%;
+height: 60%;
+}
+
+.ejemplo-5 i {
+opacity: 0;
+transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-5:hover .zoom-gallery {
+opacity: 1;
+transform: scale(1) rotate(0deg);/*Regresamos a su tamaño y posición original*/
+transition-delay: 0.2s;
+}
+.ejemplo-5:hover img {
+transform: scale(0); /*Efecto zoom-out*/
+opacity: 0;
+transition-delay: 0s;
+}
+.ejemplo-5:hover i{
+opacity: 1;
+transition-delay: 0.5s;
+}
